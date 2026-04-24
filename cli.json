@@ -1,19 +1,19 @@
 {
-    "version": "0.5.5",
+    "version": "0.5.6",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/entireio/cli/releases/download/v0.5.5/entire_windows_amd64.zip",
+            "url": "https://github.com/entireio/cli/releases/download/v0.5.6/entire_windows_amd64.zip",
             "bin": [
                 "entire.exe"
             ],
-            "hash": "1ff006f3e02090b31fc39692fb921f8ac0321163b3382913d651e34321114bf0"
+            "hash": "a2b3e29e054dd95345c485c22dfd04a6c0f2d7acac8addeacb9c122dae8b2c23"
         },
         "arm64": {
-            "url": "https://github.com/entireio/cli/releases/download/v0.5.5/entire_windows_arm64.zip",
+            "url": "https://github.com/entireio/cli/releases/download/v0.5.6/entire_windows_arm64.zip",
             "bin": [
                 "entire.exe"
             ],
-            "hash": "ffdeed1741ae1d4f9b2c897a46fea7fbbe39b002c027162529163fba131c8c76"
+            "hash": "447bd7f24beb65cff42ea17fc40d9ef8dcecd3e8e743ae131be3180674090534"
         }
     },
     "homepage": "https://github.com/entireio/cli",
