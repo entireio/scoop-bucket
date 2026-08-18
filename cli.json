@@ -1,24 +1,28 @@
 {
-    "version": "0.8.42",
+    "version": "0.10.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/entireio/cli/releases/download/v0.8.42/entire_windows_amd64.zip",
+            "url": "https://github.com/entireio/cli/releases/download/v0.10.1/entire_windows_amd64.zip",
             "bin": [
                 "git-remote-entire.exe",
                 "entire.exe"
             ],
-            "hash": "ba63909480dd03394c7c0c4abeb3769a04791d9e8854a759c498581ab0176204"
+            "hash": "d3f6afcc28f568665ec2c2586fd0a7917dba5c1fbec5c5ab36ff7a8aec7648cf"
         },
         "arm64": {
-            "url": "https://github.com/entireio/cli/releases/download/v0.8.42/entire_windows_arm64.zip",
+            "url": "https://github.com/entireio/cli/releases/download/v0.10.1/entire_windows_arm64.zip",
             "bin": [
                 "git-remote-entire.exe",
                 "entire.exe"
             ],
-            "hash": "66619b99734e2e17a0b6439bad157fb980f9e6eadcb8dba4fe6566f53e50ddb5"
+            "hash": "f876fdb32ed8329294b287ba9a847e33b470590e31c1f5bbb4187fea57c86b00"
         }
     },
     "homepage": "https://github.com/entireio/cli",
     "license": "MIT",
-    "description": "CLI for Entire"
+    "description": "CLI for Entire (renamed to 'entire' — install that instead)",
+    "post_install": [
+        "Write-Host \"This package was renamed to 'entire'. Migrate with (run when entire is not running):\" -ForegroundColor Yellow",
+        "Write-Host '  cmd.exe /D /C \"scoop install entire/entire \u0026\u0026 scoop uninstall entire/cli \u0026\u0026 scoop reset entire\"' -ForegroundColor Yellow"
+    ]
 }
